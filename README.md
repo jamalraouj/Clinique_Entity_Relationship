@@ -85,6 +85,62 @@ Menu
 	date jour
 	time temps
 
+Admissions
+    int id_admission
+    int fk_patient
+    TimeStamp date
+Rendez_vous
+    int id_rendez_vous
+    var CIN
+    DateTime date_rendezvous
+    TimeStamp date
+Chambre
+    int id_chambre
+    var nombre_chambre
+    var status_chambre
+    int prix
+    var type_chambre
+    int num_lit_vides
+    int fk_lit
+Lit
+    int id_lit
+    int nombre
+    int fk_chambre
+Historique
+    int id_historique
+    int fk_patient
+HistoriqueDossier
+    int id_dossier 
+    var CIN
+    var title_dossier
+    var nom_patient
+    TimeStamp date
+    text chahier_sante
+    var pass_vaccinal
+    int fk_medecin
+    int fk_chambre
+    int fk_medicament
+    var profession
+    var status_dossier
+    int fk_rendezvous
+HistoriqueRendez_vous
+    int id_rendez_vous
+    var CIN
+    DateTime date_rendezvous
+    TimeStamp date
+Resrevations
+    int id_reservation
+    var CIN
+    DateTime date_reservation
+    DateTime date_fin_reservation
+    int fk_chambre
+    var nom
+    var prenom
+    var telephone
+    var status_reservation
+    int nombre_reservation
+    TimeStamp date
+
 Medecin {1..n}--{0..n} Specialite
 dossier {1..n}-takes care-{1..n} Medecin
 Specialite{1..n}--{1..n}Maladie
