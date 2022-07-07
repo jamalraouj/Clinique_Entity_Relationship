@@ -1,5 +1,5 @@
 # Clinique_Entity_Relationship
-
+https://app.gleek.io/diagrams/NWTOWK03hLC3C7SWVbd-xw
 Medecin
 	int id_medecin
 	var nom_medecin
